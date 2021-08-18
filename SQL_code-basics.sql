@@ -7,7 +7,7 @@ ASC / DESC
 LIMIT
 BETWEEN
 LIKE / ILIKE / NOT LIKE ('_%'')
-IN / NOT IN ('John', 'Lucy')
+IN / NOT IN ('John', 'Lucy)
 
 
 

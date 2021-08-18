@@ -34,17 +34,17 @@ SELECT * customer_id, SUM(amount) FROM payment
 GROUP BY customer_id;
 #Returns amount every cusommer spent.  grouped by customer_id
 
-SELECT * customer_id, SUM(amount) FROM payment
+SELECT customer_id, SUM(amount) FROM payment
 GROUP BY customer_id
 ORDER BY SUM(amount) DESC;
 # Same as above but  ordered by (Note, SUMM is used again as group by)
 
-SELECT * customer_id, COUNT(amount) FROM payment
+SELECT customer_id, COUNT(amount) FROM payment
 GROUP BY customer_id
 ORDER BY COUNT(amount) DESC;
 #Returns the amount of transactions per customer
 
-SELECT * customer_id, staff_id SUM(amount) FROM payment
+SELECT customer_id, staff_id SUM(amount) FROM payment
 GROUP BY staff_id, customer_id
 ORDER BY customer_id
 #Returns how much each customer spent with each sales assistant.
